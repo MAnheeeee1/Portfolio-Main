@@ -1,0 +1,34 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: darkred;
+    height: 30px;
+    align-items: center;
+    padding: 20px;
+}
+ul{
+    display: flex;
+    gap: 1em;
+    list-style: none;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+section.hero{
+    background: rgb(129,143,200);
+    background: radial-gradient(circle, rgba(129,143,200,1) 0%, rgba(47,6,151,1) 100%);
+    height: 80vh;
+    text-align: center;
+    padding: 50px;
+}
+#Profile-image{
+    height: 200px;
+    border-radius: 30px;
+    border: 2px solid black;
+}
