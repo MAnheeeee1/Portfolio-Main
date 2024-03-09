@@ -14,111 +14,92 @@
             <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
                 <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                     <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-                    <span class="fs-4">Simple header</span>
+                    <span class="fs-4">Portfolio</span>
                 </a>
 
                 <ul class="nav nav-pills">
                     <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
+
                 </ul>
             </header>
         </div>
     </header>
     <section class="hero">
-        <div class="px-4 py-5 my-5 text-center">
-            <img class="d-block mx-auto mb-4" src="profile.jpg" alt="A portrait of myself" width="auto" height="200">
+        <dialog>
+            <button id="close-dialog">X</button>
+            <p>PS. This website its still under development so the form dosen't work yet, please send your message to 07mandao@skola.boras.se</p>
+            <form method="dialog" >
+                <div class="form-questionSet">
+                    <label for="contactName">Contact name:</label>
+                    <input type="text" id="contactName" name="name" required>
+                </div>
+                <div class="form-questionSet">
+                    <label for="contactEmail">Email:</label>
+                    <input type="email" id="contactEmail" name="email" required>
+                </div>
+                <label for="contact-message">Your message</label>
+                <textarea id="contact-message" name="message" rows="4" cols="50" placeholder="Your message goes here">
+
+                </textarea>
+
+                <button id="submit-form" type="submit">Send</button>
+            </form>
+        </dialog>
+        <div class="px-4 py-3 my-3 text-center hero-section">
+            <img class="d-block mx-auto mb-4" src="images/profile.jpg" alt="A portrait of myself" width="auto" height="200">
             <h1 class="display-5 fw-bold text-body-emphasis">Manh Dao</h1>
             <div class="col-lg-6 mx-auto">
-                <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                <p class="lead mb-4">I'm an aspiring full stack web developer currently studying at Sven Erikssongymnasiet</p>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3 ">Projects</button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4 open-modal" id="contact-btn">Contact</button>
                 </div>
             </div>
         </div>
         <div class="d-flex gap-2 justify-content-center py-5">
-  <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-    <img class="rounded-circle me-1" width="24" height="24" src="https://github.com/mdo.png" alt="">Primary
-  </span>
-            <span class="badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
-    <img class="rounded-circle me-1" width="24" height="24" src="https://github.com/mdo.png" alt="">Secondary
-  </span>
-            <span class="badge d-flex align-items-center p-1 pe-2 text-success-emphasis bg-success-subtle border border-success-subtle rounded-pill">
-    <img class="rounded-circle me-1" width="24" height="24" src="https://github.com/mdo.png" alt="">Success
-  </span>
-            <span class="badge d-flex align-items-center p-1 pe-2 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-pill">
-    <img class="rounded-circle me-1" width="24" height="24" src="https://github.com/mdo.png" alt="">Danger
-  </span>
-            <span class="badge d-flex align-items-center p-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
-    <img class="rounded-circle me-1" width="24" height="24" src="https://github.com/mdo.png" alt="">Warning
-  </span>
-            <span class="badge d-flex align-items-center p-1 pe-2 text-info-emphasis bg-info-subtle border border-info-subtle rounded-pill">
-    <img class="rounded-circle me-1" width="24" height="24" src="https://github.com/mdo.png" alt="">Info
-  </span>
-            <span class="badge d-flex align-items-center p-1 pe-2 text-dark-emphasis bg-light-subtle border border-dark-subtle rounded-pill">
-    <img class="rounded-circle me-1" width="24" height="24" src="https://github.com/mdo.png" alt="">Light
-  </span>
-            <span class="badge d-flex align-items-center p-1 pe-2 text-dark-emphasis bg-dark-subtle border border-dark-subtle rounded-pill">
-    <img class="rounded-circle me-1" width="24" height="24" src="https://github.com/mdo.png" alt="">Dark
-  </span>
+              <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+                <img class="rounded-circle me-1" width="24" height="auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="">Javascipt
+              </span>
+                        <span class="badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
+                <img class="rounded-circle me-1" width="24" height="24" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="">CSS
+              </span>
+                        <span class="badge d-flex align-items-center p-1 pe-2 text-success-emphasis bg-success-subtle border border-success-subtle rounded-pill">
+                <img class="rounded-circle me-1" width="24" height="24" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="">HTML
+              </span>
+                        <span class="badge d-flex align-items-center p-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+                <img class="rounded-circle me-1" width="24" height="24" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="">C#
+              </span>
+                        <span class="badge d-flex align-items-center p-1 pe-2 text-info-emphasis bg-info-subtle border border-info-subtle rounded-pill">
+                <img class="rounded-circle me-1" width="24" height="24" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="">Python
+              </span>
         </div>
     </section>
     <main>
 
-        <section class="py-5 text-center container">
+        <section class="text-center container" id="project-header">
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
                     <h1 class="fw-light">My Projects</h1>
+                    <p>You can find more projects on my <a href="https://github.com/MAnheeeee1">GitHub</a></p>
                 </div>
             </div>
         </section>
-
         <div class="album py-5 bg-body-tertiary">
             <div class="container">
 
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col">
                         <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                            <img src="images/Libary%20App.png">
                             <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text">An app that allows you to add books and change the status of them, build with javascipt/html and css</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                    </div>
-                                    <small class="text-body-secondary">9 mins</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                    </div>
-                                    <small class="text-body-secondary">9 mins</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"  onclick="document.location='http://manhdao.me/Libary-app/'">Live preview</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="document.location='https://github.com/MAnheeeee1/Libary-app'">Source code</button>
+
                                     </div>
                                     <small class="text-body-secondary">9 mins</small>
                                 </div>
@@ -130,7 +111,7 @@
         </div>
     </main>
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <p class="col-md-4 mb-0 text-body-secondary">© 2024 Company, Inc</p>
+        <p class="col-md-4 mb-0 text-body-secondary">© Manh Dao</p>
 
         <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
             <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
@@ -138,12 +119,12 @@
 
         <ul class="nav col-md-4 justify-content-end">
             <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Projects</a></li>
         </ul>
     </footer>
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

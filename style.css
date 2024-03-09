@@ -1,6 +1,76 @@
 footer{
     padding: 20px;
 }
+header{
+    margin-bottom: 50px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.form-questionSet{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+button#submit-form{
+    margin-top: 20px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    background-color: #0d6efd;
+    padding: 10px;
+}
+dialog {
+    animation: fade-out 0.7s ease-out;
+    padding: 20px;
+    width: 40%;
+}
 
+dialog[open] {
+    animation: fade-in 0.7s ease-out;
+}
 
+dialog[open]::backdrop {
+    animation: backdrop-fade-in 0.7s ease-out forwards;
+}
 
+/* Animation keyframes */
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: scaleY(0);
+        display: none;
+    }
+
+    100% {
+        opacity: 1;
+        transform: scaleY(1);
+        display: block;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+        transform: scaleY(1);
+        display: block;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scaleY(0);
+        display: none;
+    }
+}
+
+@keyframes backdrop-fade-in {
+    0% {
+        background-color: rgb(0 0 0 / 0%);
+    }
+
+    100% {
+        background-color: rgb(0 0 0 / 25%);
+    }
+}
